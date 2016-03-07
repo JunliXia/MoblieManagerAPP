@@ -124,9 +124,8 @@ public class LoginActivity extends Activity {
 			Intent intent=new Intent(LoginActivity.this,MainActivity.class);
 			intent.putExtra("CEmployeeEntityList", cEmployeeEntityList);
 			startActivity(intent);
-//			startService(new Intent(LoginActivity.this,LocationService.class));
 			finish();
-			
+			startService(new Intent(LoginActivity.this,LocationService.class));
 			
 		}
 		

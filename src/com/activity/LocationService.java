@@ -21,7 +21,7 @@ import android.os.StrictMode;
 
 public class LocationService extends Service {
 	private LocationClient locationClient = null;
-	private static final int UPDATE_TIME = 5000;
+	private static final int UPDATE_TIME = 1800000;
 	private static int LOCATION_COUTNS = 0;
 	private AddressBll addressBll;
 	@Override
@@ -44,12 +44,6 @@ public class LocationService extends Service {
 	public void onStart(Intent intent, int startId) {
 		// TODO Auto-generated method stub
 		super.onStart(intent, startId);
-		try {
-			Thread.sleep(5000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		locationClient = new LocationClient(this);
 		// 设置定位条件
 		LocationClientOption option = new LocationClientOption();

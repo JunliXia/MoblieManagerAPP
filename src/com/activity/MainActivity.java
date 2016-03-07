@@ -114,7 +114,14 @@ public class MainActivity extends MenuActivity implements View.OnClickListener,
 //		initData();
 		InitViewPager();
 		setListener();
-
+//		try {
+//			Thread.sleep(3000);
+//			startService(new Intent(MainActivity.this,LocationService.class));
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+	
 	}
 	
 	private void breakEmployeeList(){
