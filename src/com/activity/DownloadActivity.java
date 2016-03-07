@@ -12,6 +12,7 @@ import org.apache.http.params.BasicHttpParams;
 import org.apache.http.params.HttpConnectionParams;
 
 import com.example.mobliemanager.R;
+import com.tool.MyURL;
 
 import android.app.Activity;
 import android.content.pm.PackageInfo;
@@ -25,7 +26,7 @@ import android.widget.ImageView;
 
 public class DownloadActivity extends Activity {
 	private ImageView image = null;
-	public static String path = "http://10.20.4.96:8080/MobileManagerServer/DownloadServlet";
+	public static String path = MyURL.HIP+"/DownloadServlet";
 	private String result = "";
 
 	@Override

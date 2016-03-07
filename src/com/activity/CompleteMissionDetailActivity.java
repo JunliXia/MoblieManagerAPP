@@ -27,6 +27,7 @@ import com.entity.CMissionConclusionEntity;
 import com.entity.CMissionEntity;
 import com.example.mobliemanager.R;
 import com.tool.MyConstant;
+import com.tool.MyURL;
 
 public class CompleteMissionDetailActivity extends Activity {
 
@@ -36,7 +37,7 @@ public class CompleteMissionDetailActivity extends Activity {
 	private TextView textMissionState, textTimeData, textContent,
 			textContentSum;
 
-	public static String path = "http://10.20.4.96:8080/MobileManagerServer/DownloadServlet";
+	public static String path = MyURL.HIP+"/DownloadServlet";
 	private String result = "";
 	private ImageView image;
 	

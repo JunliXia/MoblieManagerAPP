@@ -2,6 +2,7 @@ package com.http;
 
 import java.io.File;
 
+import com.tool.MyURL;
 import com.tool.UploadUtils;
 
 import android.app.Activity;
@@ -16,7 +17,7 @@ import android.widget.Toast;
  * 
  */
 public class UploadFileTask extends AsyncTask<String, Void, String>{
-	public static final String requestURL="http://10.20.4.96:8080/MobileManagerServer/FileUploadServlet";
+	public static final String requestURL=MyURL.HIP+"/FileUploadServlet";
    /**
     *  可变长的输入参数，与AsyncTask.exucute()对应
     */

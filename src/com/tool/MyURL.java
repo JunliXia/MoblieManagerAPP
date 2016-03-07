@@ -1,7 +1,7 @@
 package com.tool;
 
 public class MyURL {
-	private static final String HIP="http://10.20.4.96:8080/MobileManagerServer";
+	public static final String HIP="http://10.20.4.96:8080/MobileManagerServer";
 	
 	
 	

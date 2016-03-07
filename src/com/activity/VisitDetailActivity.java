@@ -25,6 +25,7 @@ import android.widget.TextView;
 import com.entity.CVisitConclusionEntity;
 import com.entity.CVisitEntity;
 import com.example.mobliemanager.R;
+import com.tool.MyURL;
 
 public class VisitDetailActivity extends Activity {
 
@@ -33,7 +34,7 @@ public class VisitDetailActivity extends Activity {
 			textContentSum;
 //	private CVisitEntity cVisitEntity;
 	private CVisitConclusionEntity conclusionEntity;
-	public static String path = "http://10.20.4.96:8080/MobileManagerServer/DownloadServlet";
+	public static String path = MyURL.HIP+"/DownloadServlet";
 	private String result = "";
 	private ImageView image;
 
