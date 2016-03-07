@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/penson_center_Relative1"
+        android:layout_width="fill_parent"
+        android:layout_height="85dip"
+        android:background="#66ccff"
+         >
+
+        <ImageView
+            android:id="@+id/penson_center_headPhoto"
+            android:layout_width="70dip"
+            android:layout_height="70dip"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dip"
+            android:src="@drawable/imageclient" />
+
+        <TextView
+            android:id="@+id/penson_center_username"
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@+id/penson_center_headPhoto"
+            android:text="个人简介:没办法不纯洁..."
+            android:textColor="#FFFFFF" />
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/penson_center_check" -->
+        <!-- android:layout_width="10dip" -->
+        <!-- android:layout_height="20dip" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginLeft="58dip" -->
+        <!-- android:layout_toRightOf="@+id/penson_center_username" -->
+        <!-- android:src="@drawable/next" /> -->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dip"
+        android:background="@drawable/background_login_div_bg"
+        android:padding="10dip" >
+
+        <Button
+            android:id="@+id/menu_outlogin"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape2"
+            android:text="登出" />
+
+        <Button
+            android:id="@+id/menu_suggest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/menu_outlogin"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/shape"
+            android:text="投诉建议" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/menu_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

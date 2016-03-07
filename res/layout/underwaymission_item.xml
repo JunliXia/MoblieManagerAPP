@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <TextView
+            android:id="@+id/fabushijian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:text="任务期限"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/textTimeData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fabushijian"
+            android:text="时间"
+            android:textColor="#0099ff" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgmissionitem"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignBottom="@+id/relativeLayout1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:src="@drawable/imgmt2" />
+
+    <TextView
+        android:id="@+id/textContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgmissionitem"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/imgmissionitem"
+        android:text="asdasd" />
+
+</RelativeLayout>

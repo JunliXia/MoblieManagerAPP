@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login_div_bg"
+        android:padding="15dip" >
+
+        <ImageButton
+            android:id="@+id/imgbutBussiness"
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:layout_alignLeft="@+id/imgbutAttendance"
+            android:layout_below="@+id/imgbutAttendance"
+            android:layout_marginTop="52dp"
+            android:background="@drawable/chuchaidengji" />
+
+        <ImageButton
+            android:id="@+id/imgbutClient"
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:layout_alignLeft="@+id/imgbutMission"
+            android:layout_alignTop="@+id/imgbutBussiness"
+            android:background="@drawable/kehuguanli" />
+
+        <ImageButton
+            android:id="@+id/imgbutMission"
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:layout_above="@+id/imgbutBussiness"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/imgbutAttendance"
+            android:background="@drawable/meirirenwu" />
+
+        <ImageButton
+            android:id="@+id/imgbutAttendance"
+            android:layout_width="110dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="90dp"
+            android:background="@drawable/kaoqing" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

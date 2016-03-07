@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textState"
+        android:layout_alignBottom="@+id/textState"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="68dp"
+        android:text="时间"
+        android:textColor="#ffcc66"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/imgviewStartWork"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/nochoiceclice" />
+
+    <TextView
+        android:id="@+id/textState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgviewStartWork"
+        android:layout_marginLeft="37dp"
+        android:layout_toRightOf="@+id/imgviewStartWork"
+        android:text="签到"
+        android:textSize="15dp" />
+
+</RelativeLayout>

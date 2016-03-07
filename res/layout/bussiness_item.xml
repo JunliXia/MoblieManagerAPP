@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgperson"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/imageclient" />
+
+    <TextView
+        android:id="@+id/textbussinessside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgperson"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/imgperson"
+        android:text="写目的地的" />
+
+    <TextView
+        android:id="@+id/textbussinesstime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgperson"
+        android:layout_alignLeft="@+id/textbussinessside"
+        android:text="写归来时间"
+        android:textColor="#0099ff" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/textbussinessside"
+        android:layout_marginRight="16dp" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textbussinesscheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textbussinesstime"
+        android:layout_alignRight="@+id/relativeLayout1"
+        android:text="我是状态"
+        android:textColor="#ffcc66"
+        android:textSize="15dp" />
+
+</RelativeLayout>

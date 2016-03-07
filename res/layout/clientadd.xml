@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#66ccff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pinglun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="客户信息"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageviewBack"
+            android:layout_width="40dip"
+            android:layout_height="20dip"
+            android:layout_alignBottom="@+id/pinglun"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/backxml" />
+
+        <ImageView
+            android:id="@+id/imgrewrite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/pinglun"
+            android:visibility="gone"
+            android:layout_marginRight="23dp"
+            android:src="@drawable/imgrewrite" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/menu"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login_div_bg" >
+
+        <RelativeLayout
+            android:id="@+id/kehumingcheng_div"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dip"
+            android:background="@drawable/background_login_div_bg" >
+
+            <EditText
+                android:id="@+id/textclientname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/kehumingcheng"
+                android:layout_alignBottom="@+id/kehumingcheng"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/kehumingcheng"
+                android:hint="请输入客户名"
+                  android:textSize="15dp" 
+                />
+
+            <TextView
+                android:id="@+id/kehumingcheng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="客户名称:"
+                android:textColor="#8DB6CD"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/kehugongsi_div"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/kehumingcheng_div"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/background_login_div_bg" >
+
+            <EditText
+                android:id="@+id/textclientcompany"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/kehugongsi"
+                android:layout_alignBottom="@+id/kehugongsi"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/kehugongsi"
+                android:hint="请输入客户公司名"
+                  android:textSize="15dp" 
+                />
+
+            <TextView
+                android:id="@+id/kehugongsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="客户公司:"
+                android:textColor="#8DB6CD"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/kehudianhua_div"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/kehugongsi_div"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/background_login_div_bg" >
+
+            <EditText
+                android:id="@+id/textclientphone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/kehuhaoma"
+                android:layout_alignBottom="@+id/kehuhaoma"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/kehuhaoma"
+                android:hint="请输入客户号码"
+                  android:textSize="15dp" 
+                 />
+
+            <TextView
+                android:id="@+id/kehuhaoma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="客户号码:"
+                android:textColor="#8DB6CD"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/kehuqvyu_div"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/kehudianhua_div"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/background_login_div_bg" >
+
+            <TextView
+                android:id="@+id/textclientzone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/kehuqvyu"
+                android:layout_alignBottom="@+id/kehuqvyu"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/kehuqvyu"
+                android:hint="请输入客户区域"
+                  android:textSize="15dp" 
+                />
+
+            <TextView
+                android:id="@+id/kehuqvyu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="客户区域:"
+                android:textColor="#8DB6CD"
+                android:textSize="15dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/kehudizhi_div"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/kehuqvyu_div"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="15dip"
+            android:background="@drawable/background_login_div_bg" >
+
+            <EditText
+                android:id="@+id/textclientaddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/kuhudizhi"
+                android:layout_alignBottom="@+id/kuhudizhi"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/kuhudizhi"
+                android:hint="请输入或获取客户地址"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/kuhudizhi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="客户地址:"
+                android:textColor="#8DB6CD"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/imageclientaddress"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mapdian" />
+            
+     
+            
+
+        </RelativeLayout>
+
+              <Button
+                  android:id="@+id/butUploadClient"
+                  android:layout_width="fill_parent"
+                  android:layout_height="50dp"
+                  android:layout_alignLeft="@+id/kehudizhi_div"
+                  android:layout_alignParentBottom="true"
+                  android:layout_margin="15dp"
+                  android:background="@drawable/shape"
+                  android:text="完成" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

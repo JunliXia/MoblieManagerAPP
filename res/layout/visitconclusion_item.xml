@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgperson"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/imageclient" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgperson"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/imgperson" >
+
+        <TextView
+            android:id="@+id/textVisitTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="时间"
+            android:textColor="#ffcc66"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+     <TextView
+         android:id="@+id/visitconclusioncheck"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_alignTop="@+id/relativeLayout1"
+         android:layout_marginRight="23dp"
+         android:text="我是状态"
+         android:textSize="15dp" />
+
+</RelativeLayout>

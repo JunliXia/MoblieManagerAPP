@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imagenotice"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/imagenoticeone" />
+
+    <TextView
+        android:id="@+id/textTimeData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imagenotice"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/imagenotice"
+        android:text="时间"
+        android:textColor="#ffcc66" />
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imagenotice"
+        android:layout_alignLeft="@+id/textTimeData"
+        android:text="我是题目" />
+
+</RelativeLayout>

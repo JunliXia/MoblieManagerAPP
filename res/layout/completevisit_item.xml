@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgperson"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/imageclient" />
+
+    <TextView
+        android:id="@+id/textclientname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgperson"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/imgperson"
+        android:text="客户名" />
+
+    <TextView
+        android:id="@+id/textclientcompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgperson"
+        android:layout_alignLeft="@+id/textclientname"
+        android:text="客户公司" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textclientcompany"
+        android:layout_alignParentRight="true" >
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textstate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textclientcompany"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@+id/relativeLayout1"
+        android:text="状态"
+        android:textColor="#ffcc66"
+        android:textSize="15dp" />
+
+</RelativeLayout>

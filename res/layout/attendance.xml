@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#66ccff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pinglun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="考勤管理"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageviewBack"
+            android:layout_width="40dip"
+            android:layout_height="20dip"
+            android:layout_alignBottom="@+id/pinglun"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/backxml" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/kaoqingdaka"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/menu"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="16dp"
+        android:text="考勤时间  : "
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/kaoqingshijian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/kaoqingdaka"
+        android:layout_alignBottom="@+id/kaoqingdaka"
+        android:layout_toRightOf="@+id/kaoqingdaka"
+        android:text="08:30--09:00  16:30--17:00"
+        android:textColor="#ffcc66"
+        android:textSize="18dp" />
+
+    <ListView
+        android:id="@+id/listAttendance"
+        android:layout_width="wrap_content"
+        android:layout_height="117dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/kaoqingdaka"
+        android:background="#FFFAFA" >
+
+    </ListView>
+    
+</RelativeLayout>

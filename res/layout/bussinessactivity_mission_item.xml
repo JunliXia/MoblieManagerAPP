@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+   
+    <TextView
+        android:id="@+id/textContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgmissionitem"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/imgmissionitem"
+        android:text="asdasd" />
+
+    <TextView
+        android:id="@+id/textState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="31dp"
+        android:text="未审批"
+        android:textColor="#ff3300"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:id="@+id/imgmissionitem"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:layout_alignBottom="@+id/textState"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17dp"
+        android:src="@drawable/imageclient" />
+</RelativeLayout>

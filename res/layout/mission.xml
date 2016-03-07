@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.example.googlebottomfragment.MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#66ccff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pinglun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="任务交办"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+        
+        <ImageView
+            android:id="@+id/imageviewBack"
+            android:layout_width="40dip"
+            android:layout_height="20dip"
+            android:layout_alignBottom="@+id/pinglun"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/backxml" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/imageUnderwayMission"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/imgbeforewaitmission" />
+
+        <ImageView
+            android:id="@+id/imageCompleteMission"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/imgbeforecompletemission" />
+
+        <ImageView
+            android:id="@+id/imageWaittakeMission"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="18dp"
+            android:src="@drawable/imgbeforetakemission" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix" />
+
+</LinearLayout>

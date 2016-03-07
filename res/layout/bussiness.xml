@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#66ccff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/pinglun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="出差登记"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageviewBack"
+            android:layout_width="40dip"
+            android:layout_height="20dip"
+            android:layout_alignBottom="@+id/pinglun"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/backxml" />
+
+        <ImageView
+            android:id="@+id/imgbussinessrecall"
+            android:layout_width="35dip"
+            android:layout_height="35dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/imgbussinessrecall" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/login_div"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login_div_bg" >
+
+        <ImageView
+            android:id="@+id/bussinessplane"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/bussinessplane" />
+
+        <TextView
+            android:id="@+id/textBussinessContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/bussinessplane"
+            android:layout_alignLeft="@+id/textBussinessPlace"
+            android:text="内容" />
+
+        <TextView
+            android:id="@+id/textBussinessPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/bussinessplane"
+            android:layout_marginLeft="22dp"
+            android:layout_toRightOf="@+id/bussinessplane"
+            android:text="出发地--目的地" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/qwediv"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login_div_bg" >
+
+        <ImageView
+            android:id="@+id/imageBussimessRegirest"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/bussinessregister" />
+
+        <TextView
+            android:id="@+id/chuchaidengji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageBussimessRegirest"
+            android:layout_marginLeft="1dp"
+            android:text="出差登记"
+            android:textColor="#9E9E9E"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/textRegirestTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59dp"
+            android:text=""
+            android:textColor="#ffcc66"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/asda"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login_div_bg" >
+
+        <ImageView
+            android:id="@+id/imageBussimessinDestination"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/bussinessindestination" />
+
+        <TextView
+            android:id="@+id/didamudidi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageBussimessinDestination"
+            android:text="抵达目的地"
+            android:textColor="#9E9E9E"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/textInDestinationTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageBussimessinDestination"
+            android:layout_marginRight="59dp"
+            android:text="时间"
+            android:textColor="#ffcc66"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textInDestinationPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/didamudidi"
+            android:layout_alignBottom="@+id/didamudidi"
+            android:layout_alignParentRight="true"
+            android:text="位置"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/fggg"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login_div_bg" >
+
+        <ImageView
+            android:id="@+id/imageBussimessoutDestination"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/bussinessoutdestination" />
+
+        <TextView
+            android:id="@+id/likaimudidi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageBussimessoutDestination"
+            android:text="离开目的地"
+            android:textColor="#9E9E9E"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/texOuttDestinationTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="59dp"
+            android:text="时间"
+            android:textColor="#ffcc66"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/textOutDestinationPlace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="位置"
+            android:textSize="10dp" />
+
+    </RelativeLayout>
+    
+    
+      <RelativeLayout
+        android:id="@+id/dasd"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login_div_bg" >
+
+        <ImageView
+            android:id="@+id/imageBussimessoutComing"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/bussinesscoming" />
+
+        <TextView
+            android:id="@+id/chuchaiguilai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageBussimessoutComing"
+            android:text="出差归来"
+            android:textColor="#9E9E9E"
+            android:textSize="10dp" />
+
+<!--         <TextView -->
+<!--             android:id="@+id/textComingPlace" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignLeft="@+id/textComingtime" -->
+<!--             android:layout_alignParentBottom="true" -->
+<!--             android:text="位置" -->
+<!--             android:textSize="15dp" /> -->
+
+        <TextView
+            android:id="@+id/textComingtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="59dp"
+            android:text="时间"
+            android:textColor="#ffcc66"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+    
+          <Button
+        android:id="@+id/butbussinessactivity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/logo1"
+        android:layout_alignTop="@+id/logo0"
+        android:layout_margin="15dp"
+        android:layout_marginTop="68dp"
+        android:background="@drawable/shape"
+        android:text="出差活动" />
+</LinearLayout>

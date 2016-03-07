@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/imgperson"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="14dp"
+        android:src="@drawable/imageclient" />
+
+    <TextView
+        android:id="@+id/textclientname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgperson"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/imgperson"
+        android:text="客户名" />
+
+    <TextView
+        android:id="@+id/textsubmittime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imgperson"
+        android:layout_alignLeft="@+id/textclientname"
+        android:text="提交时间" />
+
+    <TextView
+        android:id="@+id/textcheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textsubmittime"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:text="提交状态" />
+
+"
+
+</RelativeLayout>
