@@ -29,6 +29,7 @@ public class AttendanceActivity extends Activity{
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.attendance);
 		cAttendanceEntity=(CAttendanceEntity)this.getIntent().getExtras().getSerializable("CAttendanceEntity");
+		System.out.println(cAttendanceEntity.toString());
 		init();
 		setListener();
 		setText();
@@ -59,7 +60,7 @@ public class AttendanceActivity extends Activity{
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				finish();
-			}
+			}   
 		});
 	}
 }

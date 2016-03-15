@@ -207,7 +207,14 @@ public class AttendanceAdapter extends BaseAdapter {
 	        		 }
 				 }
 			}else{
-				holder.textTime.setText("");
+				holder.textTime.setText(cAttendanceEntity.getAttendanceRegisterTime());
+				if(compareRegisterTime(strTime)){
+	        		 if(colortag==1){
+	        			 holder.textTime.setTextColor(Color.GREEN);
+	        		 }else if(colortag==2){
+	        			 holder.textTime.setTextColor(Color.RED);
+	        		 }
+				 }
 			}
 			
 			
@@ -224,7 +231,14 @@ public class AttendanceAdapter extends BaseAdapter {
 					}
 				}
 			}else {
-				holder.textTime.setText("");
+				holder.textTime.setText(cAttendanceEntity.getAttendanceRegisterTime());
+				if(compareRegisterTime(strTime)){
+	        		 if(colortag==1){
+	        			 holder.textTime.setTextColor(Color.GREEN);
+	        		 }else if(colortag==2){
+	        			 holder.textTime.setTextColor(Color.RED);
+	        		 }
+				 }
 			}
 			
 		}

@@ -58,7 +58,7 @@
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="19" />
+        android:targetSdkVersion="18" />
 
     <application
         android:name="com.activity.DemoApplication"
@@ -68,7 +68,7 @@
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.baidu.lbsapi.API_KEY"
-            android:value="bqf0zuZaHUDmX4swtmLIIcdR" />
+            android:value="2XkAU3NAbybvvLkNstT0ygZW" />
 
         <activity
             android:name="com.activity.LoginActivity"

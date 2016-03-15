@@ -7,7 +7,6 @@ import java.io.FileOutputStream;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 
-//�������ص�ͼƬ
 public class ImageHelper {
 	
 	public static BitmapFactory.Options getOperations(int width,int height){
@@ -15,7 +14,6 @@ public class ImageHelper {
 		options.outHeight = height;
 		options.outWidth = width;
 		options.inJustDecodeBounds = false;
-		/** ��Լ�ڴ� **/
 		options.inSampleSize = options.outWidth / 150;
 		options.inPreferredConfig = Bitmap.Config.ARGB_4444;
 		options.inPurgeable = true;
@@ -23,11 +21,6 @@ public class ImageHelper {
 		return options;
 	}
 
-	/**
-	 * @param filePath
-	 * ���ر�����ļ�·��
-	 * @return ����ѹ�����ͼƬ
-	 */
 	public static Bitmap createSmallImage(String filePath) {
 		Bitmap bitmap = null;
 		BitmapFactory.Options opts = new BitmapFactory.Options();
@@ -45,12 +38,6 @@ public class ImageHelper {
 		return bitmap;
 	}
 
-	/**
-	 *  ����ѹ����ͼƬ
-	 * @param bitmap  ��Ҫ�����ͼƬ
-	 * @param file  ͼƬ�ı�������·��
-	 * @return  true ����ɹ� ��false ���򱣴�ʧ��
-	 */
 	public static boolean saveCompressBitmap(File file) {
 		FileOutputStream fileOutputStream = null;
 		Bitmap bitmap = createImage(file.toString());
@@ -75,12 +62,6 @@ public class ImageHelper {
 		return false;
 	}
 	
-	/**
-	 *  ����ѹ����ͼƬ
-	 * @param bitmap  ��Ҫ�����ͼƬ
-	 * @param file  ͼƬ�ı�������·��
-	 * @return  true ����ɹ� ��false ���򱣴�ʧ��
-	 */
 	public static boolean saveCompressBitmap(Bitmap bitmap, File file) {
 		FileOutputStream fileOutputStream = null;
 		try {
@@ -104,11 +85,6 @@ public class ImageHelper {
 		return false;
 	}
 
-	/**
-	 * ����800*480�ֱ��ʵ�ͼƬ
-	 * @param filePath
-	 * @return
-	 */
 	public static Bitmap createImage(String filePath) {
 		Bitmap bitmap = null;
 		BitmapFactory.Options opts = new BitmapFactory.Options();
